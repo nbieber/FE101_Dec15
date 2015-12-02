@@ -1,6 +1,16 @@
 /* Sub-menus */
 nav ul ul {
 	display:  none;
+	background-color: white;
+	position: absolute;
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav li {
+	list-style: none;
 }
 
 /* Show sub-menu on hover */
@@ -13,6 +23,16 @@ nav > ul > li {
 	display: inline-block;
 	margin: 0 10px;
 	vertical-align: top;
+	width: 100px;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
 }
 
 
