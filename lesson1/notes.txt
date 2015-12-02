@@ -4,3 +4,12 @@
 - class
 - id
 
+// links
+
+https://github.com/nbieber/FE101_Dec15 - code from in class!!!!
+
+http://howtocenterincss.com/
+http://flexboxfroggy.com/ 
+http://www.meetup.com/learn-python-nyc/events/225810674/?a=co2_grp&gj=co2&rv=co2
+http://nycda.com/blog/how-to-create-a-git-repo/ - making a git repo, command line
+https://learnwithnicole.wordpress.com/2015/11/15/making-a-new-project-with-github-and-sourcetree/ - making a git repo, sourcetree
