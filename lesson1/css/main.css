@@ -1,0 +1,19 @@
+/* Sub-menus */
+nav ul ul {
+	display:  none;
+}
+
+/* Show sub-menu on hover */
+nav ul li:hover ul {
+	display: block;
+}
+
+/* Style menu li */
+nav > ul > li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+
+
+
