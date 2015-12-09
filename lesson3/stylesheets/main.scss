@@ -1,0 +1,36 @@
+@import 'modules/colors';
+@import 'fonts';
+
+@import 'button';
+@import 'nav';
+
+$myFavoriteColor: green;
+$paragraphWidth: 100px;
+
+body {
+  background-color: $myFavoriteColor;
+  font-family: 'waltograph_uibold';
+}
+
+p {
+  background-color: white;
+  color: $myFavoriteColor;
+  width: $paragraphWidth;
+}
+
+.giant-paragraph {
+  width: $paragraphWidth;
+}
+
+// nav {
+//   border: 1px solid black;
+  
+//   ul {
+//     color: pink;
+//   }
+  
+//   li {
+//     text-decoration: underline;
+//   }
+// }
+
