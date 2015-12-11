@@ -1,0 +1,9 @@
+body {
+  background: orange; }
+
+@media (max-width: 600px) {
+  /* Put your CSS here */
+  body {
+    background: blue; } }
+
+/*# sourceMappingURL=main.css.map */

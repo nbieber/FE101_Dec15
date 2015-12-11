@@ -1,0 +1,12 @@
+$myFavoriteColor: orange;
+
+body {
+	background: $myFavoriteColor;
+}
+
+@media (max-width: 600px){
+  /* Put your CSS here */
+  body {
+    background: blue;
+  }
+}
