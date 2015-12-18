@@ -1,0 +1,18 @@
+// CSS Prefixes
+
+Tools -> Command Palette -> Package Control: Install Package
+Autoprefixer Package
+
+Sublime Autocompletion
+
+// Resetting
+
+normalize.css - I recommend this one!
+or
+reset.css
+
+// Cross browser testing sites
+browserling
+browser stack
+
+
