@@ -1,0 +1,26 @@
+if(last story for this character)
+{
+	for(each character unlocked by this one)
+	{
+		add their first story to the list of stories we unlock right now
+	}
+}
+else
+{
+	unlock the next chapter for this character
+}
+
+for(each story in our list of stories to unlock)
+{
+	if(it's locked)
+	{
+		unlock it
+		add a hammer
+	}
+
+	if(it's in a new world area)
+	{
+		unlock that new world area!!!
+	}
+}
+
