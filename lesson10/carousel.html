@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		img {
+			width: 600px;
+			height: 400px;
+		}
+	</style>
+</head>
+<body>
+	<img id="carousel" src="http://cdn.sheknows.com/articles/2013/04/Puppy_2.jpg" alt="">
+	<button id="prev">
+		Prev
+	</button>
+	<button id="next">
+		Next
+	</button>
+	
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script>
+		var images = [
+			"http://cdn.sheknows.com/articles/2013/04/Puppy_2.jpg",
+			"http://www.pawderosa.com/images/puppies.jpg",
+			"http://i.kinja-img.com/gawker-media/image/upload/s--PKreMmT3--/1067016301928240232.jpg"
+		];
+
+		var i = 0;
+		// setInterval(function() {
+
+		// 	$("#carousel").attr("src", images[i]);
+
+		// 	i++;
+
+		// 	if(i > images.length)
+		// 	{
+		// 		i = 0;
+		// 	}
+
+		// }, 1000);
+
+		console.log("I set up an interval");
+
+		function showPrevImage()
+		{
+			i--;
+			if(i < 0)
+			{
+				i = images.length - 1;
+			}
+			$("#carousel").attr("src", images[i]).fadeIn(500);
+		}
+		$("#prev").click(showPrevImage);
+
+		function showNextImage()
+		{
+			i++;
+			if(i >= images.length)
+			{
+				i = 0;
+			}
+			$("#carousel").attr("src", images[i]);
+		}
+		$("#next").click(showNextImage);
+
+	</script>
+</body>
+</html>

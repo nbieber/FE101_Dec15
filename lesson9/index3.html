@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('p').css('color', 'pink');
+
+			var banner = $('#foo');
+
+			banner.css('color', 'red');
+			banner.html('<a href="http://google.com">Google</a>');
+			banner.show();
+
+			$('p').eq(2).css('color', 'red');
+
+
+		});
+	</script>
+</head>
+<body>
+	<h1 id="foo">This is a banner</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, numquam, corporis? Veniam aliquid, quo deserunt sapiente mollitia sit ipsa tempore, optio odio tenetur vel excepturi. Nobis repellendus, ab. Nemo, quisquam.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, provident exercitationem consequuntur laudantium molestias nulla, harum sed, ratione saepe vel minus obcaecati expedita labore! Mollitia nostrum quos voluptate voluptas a.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, provident exercitationem consequuntur laudantium molestias nulla, harum sed, ratione saepe vel minus obcaecati expedita labore! Mollitia nostrum quos voluptate voluptas a.</p>
+</body>
+</html>

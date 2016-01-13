@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		.pink {
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	
+	<button id="button1">Hello</button>
+	<button id="button2">Button 2</button>
+
+	<button id="button3">Button 3</button>
+
+	<nav>
+		<a href="#stuff">link to stuff</a>
+	</nav>
+
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus distinctio, ex, aut optio itaque delectus consequatur repudiandae molestiae voluptatem recusandae, voluptate fugit ut, placeat? Aliquam sunt commodi, nemo ullam!
+
+	<div id="stuff">Stuff!</div>
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+	<script>
+		function sayHello()
+		{
+			alert('Hello!');
+		}
+
+		//$('#button1').click(sayHello);
+
+		$('#button1').on('click', sayHello);
+
+
+		function changeColor()
+		{
+			$('body').toggleClass('pink');
+		}
+
+		$('#button2').hover(changeColor);
+
+		//$('#button2').on('mouseover', changeColor);
+
+		function scrollToPosition(event)
+		{
+			console.log(event);
+
+			event.preventDefault();
+			$(window).scrollTo('#stuff', 1000);
+		}
+
+		$('nav a').click(scrollToPosition);
+
+		// A click event with an anonymous function
+
+		$('#button3').click(function () {
+			alert('Button 3! Whoo!');
+		});
+
+
+
+	</script>
+</body>
+</html>
