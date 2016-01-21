@@ -1,0 +1,19 @@
+Parallax:
+stellar
+skrollr
+scrollmagic
+http://matthew.wagerfield.com/parallax/
+
+One page websites:
+fullPage js
+
+Menu:
+sidr
+
+Stock Images:
+https://www.morguefile.com/
+https://www.pexels.com/
+http://lorempixel.com/
+
+Tutorials:
+codrops

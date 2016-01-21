@@ -1,0 +1,7 @@
+git init - says "this folder is using git now" (do this inside your project folder)
+
+git status - check the status
+
+git add -A  - put all newly changed files in the staging area
+
+username.github.io/projectname

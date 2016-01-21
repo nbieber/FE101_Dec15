@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#carousel {
+			position: relative;
+		}
+
+		#carousel img {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 600px;
+			height: 400px;
+
+			display: none;
+		}
+
+		#carousel img:first-of-type {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="carousel">
+		<img src="http://cdn.sheknows.com/articles/2013/04/Puppy_2.jpg" alt="">
+		<img src="http://www.pawderosa.com/images/puppies.jpg" alt="">
+		<img src="http://i.kinja-img.com/gawker-media/image/upload/s--PKreMmT3--/1067016301928240232.jpg" alt="">
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			// Find images
+			var images = $("#carousel img");
+
+			// Set up a counter
+			var i = 0;
+
+			// Every 1s, do this...
+			setInterval(function() {
+
+				// Hide the current image (hint: use .hide())
+				images.eq(i).fadeOut();
+
+				// Increase our counter
+				// If it gets too big, set it to 0
+				// i++;
+				// if(i >= images.length)
+				// {
+				// 	i = 0;
+				// }
+				i = (i + 1) % images.length;
+
+				// Show the next image
+				images.eq(i).fadeIn();
+
+			}, 1000);
+
+			function showPrevious()
+			{
+				// Hide the current image
+				images.eq(i).fadeOut();
+
+				// Decrease the counter
+				// If it gets too small, set it to the length - 1
+		
+		        //if i < 0, set it to 0, else set it to i - 1
+				//i = (i < 0) ? 0 : i - 1;
+				i = (i - 1) % images.length;
+
+
+				// Show the previous image
+				images.eq(i).fadeIn();
+			}
+			$("#prev").click(showPrevious);
+
+		});
+	</script>
+</body>
+</html>
